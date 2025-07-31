@@ -43,3 +43,283 @@ footer {
   color: #ddd;
 }
 
+.............................................................................
+/* Cabeçalho */
+header {
+  background-color: #444;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px; /* Bordas arredondadas no cabeçalho */
+}
+
+#logo img {
+  width: 150px;
+  border-radius: 10px; /* Logo com borda arredondada */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  background-color: #555;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #777;
+}
+
+.link-menu.f {
+  background-color: #5b305a;
+}
+
+.link-menu.l {
+  background-color: #e49756;
+}
+
+.link-menu.m {
+  background-color: #e04b5a;
+}
+
+/* Estilos para imagens e conteúdo */
+main {
+  background-color: #333;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 15px; /* Bordas arredondadas no conteúdo principal */
+}
+
+#principal {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  flex-wrap: wrap; /* Permite que o layout se ajuste em telas menores */
+}
+
+#principal figure img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px; /* Bordas arredondadas nas imagens */
+  margin-bottom: 20px; /* Espaçamento inferior para separar a imagem do texto */
+}
+
+#sec_ctd {
+  max-width: 600px;
+}
+
+#sec_ctd h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#sec_ctd p {
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+#sec_ctd b {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+/* Seção de descrição (segunda parte do conteúdo) */
+#second {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+#second section {
+  flex: 1 1 48%;
+  margin: 10px;
+}
+
+#descricao iframe {
+  width: 100%;
+  height: 320px;
+  border-radius: 10px; /* Bordas arredondadas no iframe */
+}
+
+#acesso {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza os itens dentro de acesso */
+  margin-top: 20px;
+}
+
+#acesso a {
+  background-color: #e49756;
+  color: white;
+  padding: 15px;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 10px;
+  width: 200px;
+  margin-top: 10px;
+}
+
+#acesso a:hover {
+  background-color: #e04b5a; /* Efeito de hover */
+}
+
+#acesso .valor {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+/* Rodapé */
+footer {
+  background-color: #333;
+  color: #ddd;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+}
+
+#contato #email a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#contato #social a {
+  margin: 0 10px;
+}
+
+#contato #social img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%; /* Ícones sociais arredondados */
+}
+
+/* Cartaz e links das seções */
+#second a.cartaz {
+  display: block;
+  margin-bottom: 10px;
+  max-width: 300px;
+  border-radius: 10px; /* Bordas arredondadas nas imagens */
+}
+
+#second a.cartaz img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Ajustes para centralizar o valor e o botão de compra no Livro */
+#sec_ctd p, #acesso a {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center; /* Centraliza o texto */
+}
+
+#acesso {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#acesso a {
+  background-color: #e49756;
+  color: white;
+  padding: 15px;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 10px;
+  width: 200px;
+}
+
+#acesso a:hover {
+  background-color: #e04b5a; /* Cor de fundo no hover */
+}
+
+#acesso .valor {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px; /* Espaçamento entre o valor e o botão */
+}
+
+/* Ajustes para ícones de redes sociais na página de Música */
+#contato #social {
+  display: flex;
+  flex-direction: column; /* Organiza os ícones na vertical */
+  align-items: center;
+}
+
+#contato #social a {
+  margin-bottom: 10px; /* Espaçamento entre os ícones */
+}
+
+#contato #social img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Tornando os ícones sociais arredondados */
+}
+
+/* Ajustes de responsividade */
+@media (max-width: 768px) {
+  #second {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #second section {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+
+  #acesso a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+................................................................................
+
+#logo{
+  width: 180px;
+  height:auto
+}
+
+
+header{
+  display:flex;
+  justify-content:space-between;
+
+}
+ul{
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+a.link-menu{
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+a {
+  text-decoration: none;
+}
+figure img {
+width: 400px;
+height: 800px
+}
